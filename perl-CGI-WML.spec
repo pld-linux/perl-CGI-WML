@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	CGI
-%define	pnam	WML
+%define		pdir	CGI
+%define		pnam	WML
 Summary:	CGI::WML - subclass LDS's "CGI.pm" for WML output and WML methods
 Summary(pl):	CGI::WML - podklasa CGI.pm do wyj¶cia i metod WML
 Name:		perl-CGI-WML
