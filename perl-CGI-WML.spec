@@ -8,7 +8,7 @@
 Summary:	CGI::WML - Subclass LDS's "CGI.pm" for WML output and WML methods
 Summary(pl):	CGI::WML - podklasa CGI.pm do wyj¶cia i metod WML
 Name:		perl-CGI-WML
-Version:	0.07
+Version:	0.08
 Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
