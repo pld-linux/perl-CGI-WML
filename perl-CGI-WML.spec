@@ -16,7 +16,7 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	091abe6a07f1b795d63437e78bf68efd
 BuildRequires:	perl-devel >= 5.6
-%if %{?with tests}
+%if %{with tests}
 BuildRequires:	perl-CGI
 BuildRequires:	perl-HTML-Parser
 BuildRequires:	perl-HTML-TableExtract
