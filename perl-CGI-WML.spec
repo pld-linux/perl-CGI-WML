@@ -9,7 +9,7 @@ Summary:	CGI::WML - Subclass LDS's "CGI.pm" for WML output and WML methods
 Summary(pl):	CGI::WML - podklasa CGI.pm do wyj¶cia i metod WML
 Name:		perl-CGI-WML
 Version:	0.09
-Release:	1
+Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -20,7 +20,7 @@ BuildRequires:	perl-HTML-Parser
 BuildRequires:	perl-HTML-TableExtract
 BuildRequires:	perl-XML-Parser
 %endif
-BuildRequires:	rpm-perlprov >= 3.0.3-26
+BuildRequires:	rpm-perlprov >= 4.0.2-104
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
