@@ -10,7 +10,8 @@ Summary(pl):	CGI::WML - podklasa CGI.pm do wyj¶cia i metod WML
 Name:		perl-CGI-WML
 Version:	0.09
 Release:	3
-License:	GPL/Artistic
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	091abe6a07f1b795d63437e78bf68efd
