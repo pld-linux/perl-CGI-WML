@@ -1,6 +1,7 @@
 #
 # Conditional build:
 # _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	CGI
 %define	pnam	WML
@@ -8,7 +9,7 @@ Summary:	CGI::WML - Subclass LDS's "CGI.pm" for WML output and WML methods
 Summary(pl):	CGI::WML - podklasa CGI.pm do wyj¶cia i metod WML
 Name:		perl-CGI-WML
 Version:	0.05
-Release:	2
+Release:	0.2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
