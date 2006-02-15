@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	091abe6a07f1b795d63437e78bf68efd
+Patch0:		%{name}-noninteractive.patch
 BuildRequires:	perl-devel >= 1:5.8.0
 %if %{with tests}
 BuildRequires:	perl-CGI
@@ -27,8 +28,8 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-CGI::WML provides WML output and WML methods for CGI programming.
-The purpose of the module is to retain the familiar CGI.pm way of
+CGI::WML provides WML output and WML methods for CGI programming. The
+purpose of the module is to retain the familiar CGI.pm way of
 programming to enable experienced CGI programmers to use their
 existing skills when creating WAP applications.
 
@@ -40,6 +41,7 @@ przy tworzeniu aplikacji WAP.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
+%patch0 -p1
 
 %build
 %{__perl} Makefile.PL \
@@ -53,6 +55,9 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+
+rm -f $RPM_BUILD_ROOT%{perl_archlib}/perllocal.pod
+rm -f $RPM_BUILD_ROOT%{perl_vendorarch}/auto/CGI/WML/.packlist
 
 %clean
 rm -rf $RPM_BUILD_ROOT
