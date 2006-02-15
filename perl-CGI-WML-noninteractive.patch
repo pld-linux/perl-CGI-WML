@@ -1,0 +1,14 @@
+--- CGI-WML-0.09/Makefile.PL~	2003-02-21 15:27:27.000000000 +0200
++++ CGI-WML-0.09/Makefile.PL	2006-02-15 23:46:24.000000000 +0200
+@@ -21,10 +21,7 @@
+ 
+ THERE
+ ;
+-        while ($res !~ /^(y|n|q)/i) {
+-            $res = prompt("Remove XML::Parser dependency? [Yes/No/Quit]:");
+-        }
+-        exit(1) if ($res =~ /^q/i);
++		$res = 'y';
+         if ($res =~ /n/) {
+             print <<THERE
+ Ok, leaving dependency in. Install XML::Parser before running 'make'
