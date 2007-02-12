@@ -6,7 +6,7 @@
 %define		pdir	CGI
 %define		pnam	WML
 Summary:	CGI::WML - subclass LDS's "CGI.pm" for WML output and WML methods
-Summary(pl):	CGI::WML - podklasa CGI.pm do wyj∂cia i metod WML
+Summary(pl.UTF-8):   CGI::WML - podklasa CGI.pm do wyj≈õcia i metod WML
 Name:		perl-CGI-WML
 Version:	0.09
 Release:	3
@@ -33,10 +33,10 @@ purpose of the module is to retain the familiar CGI.pm way of
 programming to enable experienced CGI programmers to use their
 existing skills when creating WAP applications.
 
-%description -l pl
-CGI::WML udostÍpnia wyj∂cie WML i metody WML do programowania CGI.
-Celem tego modu≥u jest zachowanie znanej metody programowania CGI, aby
-umoøliwiÊ do∂wiadczonym programistom CGI uøywanie swoich umiejÍtno∂ci
+%description -l pl.UTF-8
+CGI::WML udostƒôpnia wyj≈õcie WML i metody WML do programowania CGI.
+Celem tego modu≈Çu jest zachowanie znanej metody programowania CGI, aby
+umo≈ºliwiƒá do≈õwiadczonym programistom CGI u≈ºywanie swoich umiejƒôtno≈õci
 przy tworzeniu aplikacji WAP.
 
 %prep
