@@ -6,7 +6,7 @@
 %define		pdir	CGI
 %define		pnam	WML
 Summary:	CGI::WML - subclass LDS's "CGI.pm" for WML output and WML methods
-Summary(pl.UTF-8):   CGI::WML - podklasa CGI.pm do wyjścia i metod WML
+Summary(pl.UTF-8):	CGI::WML - podklasa CGI.pm do wyjścia i metod WML
 Name:		perl-CGI-WML
 Version:	0.09
 Release:	3
