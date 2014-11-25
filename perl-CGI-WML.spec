@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	CGI
 %define		pnam	WML
+%include	/usr/lib/rpm/macros.perl
 Summary:	CGI::WML - subclass LDS's "CGI.pm" for WML output and WML methods
 Summary(pl.UTF-8):	CGI::WML - podklasa CGI.pm do wyjścia i metod WML
 Name:		perl-CGI-WML
@@ -16,14 +16,15 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	091abe6a07f1b795d63437e78bf68efd
 Patch0:		%{name}-noninteractive.patch
+URL:		http://search.cpan.org/dist/CGI-WML/
 BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 3.0.3-26
 %if %{with tests}
 BuildRequires:	perl-CGI
 BuildRequires:	perl-HTML-Parser
 BuildRequires:	perl-HTML-TableExtract
 BuildRequires:	perl-XML-Parser
 %endif
-BuildRequires:	rpm-perlprov >= 3.0.3-26
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
