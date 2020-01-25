@@ -4,7 +4,6 @@
 
 %define		pdir	CGI
 %define		pnam	WML
-%include	/usr/lib/rpm/macros.perl
 Summary:	CGI::WML - subclass LDS's "CGI.pm" for WML output and WML methods
 Summary(pl.UTF-8):	CGI::WML - podklasa CGI.pm do wyjścia i metod WML
 Name:		perl-CGI-WML
